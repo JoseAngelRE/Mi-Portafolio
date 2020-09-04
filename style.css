@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root{
+    --bg: #f5f5f5;
+    --fg: #141414;
+    --cardbg: #EEE;
+    --buttonbg: #cacaca;
+    --accent: #FFAC33;
+
+    --border: 5px;
+}
+
+body{
+    color: var(--fg);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+}
+
+.card{
+    background-color: var(--cardbg);
+    width: 45%;
+    margin: 5% auto;
+    padding: 50px;
+
+    border-radius: var(--border);
+    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.35);
+}
+
+.photo{
+    margin: 10px auto;
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgb(0, 0, 0, 0.35);
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.greeting{
+    margin-top: 15px;
+
+    text-align: center;
+    font-size: 40px;
+}
+
+.subtitle{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.text{
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.block{
+    margin-bottom: 20px;
+}
+
+.list-item{
+    list-style: none;
+    transition: all .3s ease-out;
+}
+
+.buttons{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button{
+    background-color: var(--buttonbg);
+    text-decoration: none;
+    color: var(--fg);
+
+    font-size: 15px;
+    padding: 10px;
+    border-radius: var(--border);
+    box-shadow: 0 2px 5px rgb(0, 255, 255, 0.35);
+    transition: all .3s ease-out;
+}
+
+.button:hover{
+    background-color: var(--accent);
+    box-shadow: 0 7px 10px rgb(0, 255, 255, 0.35);
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+
+.list-item:hover{
+    color: var(--accent);
+    transform: translateY(-4px);
+}
